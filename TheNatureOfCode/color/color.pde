@@ -1,7 +1,7 @@
 void setup()
 {
     size(1024, 100);
-    colorMode(HSB,0xff);
+    colorMode(HSB, 0xff);
 }
 
 void draw()
@@ -15,9 +15,10 @@ void draw()
     {
         for (int y = 0; y < 100; ++y)
         {
-        	pixels[x+y*1024] = color(ccolor,0xff,0xff);
+            pixels[x + y * 1024] = color(ccolor, 0xff, 0xff);
         }
-       	ccolor+=colorStep;
+        ccolor += colorStep;
+        
 
     }
     updatePixels();
